@@ -1,0 +1,28 @@
+/*
+	
+	
+	Fonts for Offsite
+	
+	
+*/
+@font-face {
+  font-family: "gotham", sans-serif;
+  src: url("./fonts/Gotham-Book.otf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "gotham", sans-serif;
+  src: url("./fonts/Gotham-Medium.otf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: "gotham", sans-serif;
+  src: url("../fonts/Gotham-Bold.otf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("../fonts/ProximaNova-Bold.ttf");
+  font-weight: 700; }
+
+/*# sourceMappingURL=fonts.css.map */

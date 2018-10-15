@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#a55f41"/>
+	
+	<title>{% if title is defined %}{{ title  }} | {% endif %}{{ siteName }}</title>
+	
+	<link rel="shortcut icon" href="{{ siteUrl }}_assets/images/favicon.png" type="image/x-icon">
+	
+	<!-- Stylesheet -->
+	<link href="{{ siteUrl }}assets/css/foundation.min.css" rel="stylesheet"/>
+	<link href="{{ siteUrl }}assets/css/style.css" rel="stylesheet"/>
+	
+	<!-- Scripts -->
+	<script src="{{ siteUrl }}assets/js/jquery.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+{% block head %}
+
+{% endblock %}
+
+</head>
+<body>
+	
+	<header {% if header is defined %}class="white"{% endif %}>
+		<div class="grid-container">
+		<div class="header-container">
+		 <div class="grid-x align-justify align-middle">
+			 <div class="shrink cell">
+				 <a href="{{ siteUrl }}">
+					 {% if header is defined %}
+					 <img class="logo" src="assets/icons/Offsite-Logo-Primary-Black.png" />
+					 {% else %}
+					 <img class="logo" src="assets/icons/Offsite-Logo-Primary-White.png" />
+					 {% endif %}
+				 </a>
+			 </div>
+			 <div class="auto cell">
+				 <nav>
+					 <div class="grid-x align-right">
+						 <div class="shrink cell">
+							 <a href="{{ siteUrl }}whats-included">Whats Included</a>
+						 </div>
+						 <div class="shrink cell">
+							 <a href="{{ siteUrl }}faq">FAQ</a>
+						 </div>
+						 <div class="shrink cell">
+							 <a href="{{ siteUrl }}contact">Contact</a>
+						 </div>
+						 <div class="shrink cell">
+							 <a class="button brown" href="{{ siteUrl }}booking">Booking</a>
+						 </div>
+					 </div>
+				 </nav>
+			 </div>
+		 </div>
+		</div>
+		</div>
+	</header>
+	<main>
+		{% block content %}
+		<h1>Craft isnt working</h1>
+		{% endblock %}
+	</main>
+	<footer>
+		<div class="grid-x align-justify small-align-center">
+			<div class="small-12 medium-shrink cell">
+				<img class="logo" src="assets/icons/Offsite-Logo-Primary-White.png" />
+				<h3 class="greyed-out">©2018 offsite, all rights reserved<br>Site by nominee</h3>
+			</div>
+			<div class="small-12 medium-shrink cell small-text-center lg-text-right">
+				<h3 class="off-white padded">220 SE 4th Suite 400<br>Oklahoma City, OK 73129</h3>
+				<h3 class="book off-white">405.745.3578</h3>
+			</div>
+		</div>
+	</footer>
+	
+<script src="{{ siteUrl }}assets/js/script.js"></script>
+</script>
+</body>
+</html>

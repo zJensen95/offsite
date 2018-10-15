@@ -1,0 +1,55 @@
+{% extends "_layout" %}
+{% set header = 'white' %}
+{% block content %}
+
+<section class="contact">
+	<div class="grid-container">
+			<h1>Lorem Ipsum Sit</h1>
+			
+			<div class="grid-x grid-margin-x">
+				<div class="small-12 medium-8 cell">
+					
+					<form class="contact-form">
+					<div class="grid-x grid-margin-x">
+						<div class="small-12 medium-6 cell">
+							<input type="text" placeholder="Full Name" />
+						</div>
+						<div class="small-12 medium-6 cell">
+							<input type="text" placeholder="Subject" />
+						</div>
+					</div>
+					<div class="grid-x grid-margin-x">
+						<div class="small-12 medium-6 cell">
+							<input type="text" placeholder="Email" />
+						</div>
+						<div class="small-12 medium-6 cell">
+							<input type="text" placeholder="Phone" />
+						</div>
+					</div>
+					<div class="grid-x">
+						<div class="small-12 cell">
+							<textarea rows="5" >Your Message...</textarea>
+						</div>
+					</div>
+					<div class="grid-x">
+						<div class="shrink cell">
+							<input type="submit" value="Send Message" />
+						</div>
+					</div>
+					</form>
+						
+				</div>
+				<div class="small-12 medium-4 cell contact-info">
+					<h2 class="book">Contact Info</h2>
+					<h3 class="book"><span class="bold">Phone:</span> (405) 555-5555</h3>
+					<h3 class="book"><span class="bold">Email:</span> info@offsiteokc.com</h3>
+					<h3>Mailing Address:</h3>
+					<h3 class="book">220 SE 4th Suite 400 #64<br>
+							Oklahoma City, OK 73129</h3>
+				</div>
+			</div>
+
+	</div>
+</section>
+
+{% endblock %}

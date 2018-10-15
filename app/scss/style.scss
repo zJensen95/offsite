@@ -1,0 +1,642 @@
+/*
+	
+	
+	Stylesheet for Offsite
+	
+	
+*/
+
+
+@import 'fonts.css';
+@import 'foundation.min.css';
+
+/*
+	
+	Variables
+	
+*/
+
+// Colors
+
+$grey: #464447;
+$grey-hover: #5b575d;
+$brown: #b59b8f;
+$offWhite: #f2f2f2;
+$beige: #ecece4;
+
+/*
+	
+	Utlities
+	
+*/
+
+@media (min-width: 0px) {
+	.small-text-center {
+		text-align: center;
+	}
+	.small-text-left {
+		text-align: left;
+	}
+	.small-text-right {
+		text-align: right;
+	}
+}
+
+@media (min-width: 640px) {
+	.med-text-center {
+		text-align: center;
+	}
+	.med-text-left {
+		text-align: left;
+	}
+	.med-text-right {
+		text-align: right;
+	}
+}
+
+@media (min-width: 1024px) {
+	.lg-text-center {
+		text-align: center;
+	}
+	.lg-text-left {
+		text-align: left;
+	}
+	.lg-text-right {
+		text-align: right;
+	}
+}
+
+/*
+	
+	Typography
+	
+	--
+	Header One - Top level header for banners and big sections.
+	
+	--
+	Header Two - Header for less smaller sections.
+	
+	--
+	Header Three - Header for smaller paragraphs and subheader underneath header two
+
+	
+*/
+
+
+// Colors
+h1, h2, h3, p {
+	color: $grey;
+	
+	&.black {
+		color: #000;
+	}
+	.black {
+		color: #000;
+	}
+	&.white {
+		color: $offWhite;
+	}
+	.white {
+		color: $offWhite;
+	}
+	
+	&.book {
+		font-weight: 400;
+	}
+	.book {
+		font-weight: 400;
+	}
+
+	&.bold {
+		font-weight: 700;
+	}
+}
+
+.bold {
+	font-weight: 700;
+}
+
+
+// Header One
+h1 {
+	font-family: "proxima-nova", 'Garamond', serif;
+	font-size: 3rem;
+	font-weight: 700;
+	
+	line-height: 1.12em;
+	letter-spacing: .284em;
+	text-transform: uppercase;
+	
+	&.white {
+		color: #fff;
+	}
+}
+
+// Header Two
+h2 {
+	font-family: "gotham", 'Helvetica', 'Verdana', 'Arial', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	
+	line-height: 1.16em;
+	letter-spacing: .137em;
+	text-transform: uppercase;
+	
+	&.book {
+		font-weight: 400;
+	}
+}
+
+// Header Three
+h3 {
+	font-family: "gotham", 'Helvetica', 'Verdana', 'Arial', sans-serif;
+	font-size: 1.125rem;
+	font-weight: 700;
+	
+	line-height: 1.1em;
+	letter-spacing: .137em;
+	text-transform: uppercase;
+	
+	&.book {
+		font-weight: 400;
+	}
+	&.off-white {
+		color: $offWhite;
+	}
+}
+
+// Paragraph
+p {
+	font-family: "gotham", serif;
+	font-size: .87rem;
+	font-weight: 400;
+	
+	line-height: 2.2em;
+	letter-spacing: .137em;
+}
+
+// Helper Classes
+
+.lowercase {
+	text-transform: none;
+}
+
+
+/*
+	
+	Interactive
+	
+	--
+	Button - Use as a class on a tags, filled in
+	
+	--
+	Link - Use as a class on a tags or submissions on forms, underlined
+	
+	--
+	Input[type='radio'] - This is a radio tag, must be set up like this:
+	
+	<input type="radio" id="id-example" name="name-example" />
+	<label for="id-example" class="radio">Lorem Ipsum</label>
+	
+*/
+
+//
+
+a {
+	@extend p;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+// Button
+.button,
+input[type="submit"] {
+	position: relative;
+	padding: 10px 25px;
+	background: $grey;
+	color: #fff;
+	border: 1px solid transparent;
+	
+	transition: all .2s ease-out;
+	transform: translateY(0px);
+	
+	outline: none;
+	
+	@extend p;
+	text-transform: uppercase;
+	
+	&:hover {
+		background: $grey-hover;
+		color: #fff;
+	}
+	&:focus {
+		color: #fff;
+		outline: none;
+	}
+	&:active {
+		transform: translateY(10px);
+	}
+	
+	// Colors
+	&.brown {
+		background: $brown;
+	}
+	&.white {
+		background: $offWhite;
+		color: $grey;
+	}
+}
+
+// Link
+.link {
+	position: relative;
+	color: $grey;
+	background: transparent;
+	padding: 12px 3px;
+	
+	@extend p;
+	text-transform: uppercase;
+	
+	transition: all .2s ease-out;
+	
+	&:after {
+		display: block;
+		content: "";
+		position: absolute;
+			bottom: 0;
+			left: 0;
+		width: 100%; height: 1px;
+		background: $grey;
+		
+		transition: all .2s ease-out;
+	}
+	&:hover {
+		color: $grey-hover;
+		
+		&:after {
+			background: #5b575d;
+			bottom: -4px;
+		}
+	}
+}
+
+// Input
+
+input[type],
+textarea {
+	border-radius: 0px;
+	box-shadow: none;
+	border: none;
+	outline: none;
+	
+	&:hover {
+		box-shadow: none;
+		outline: none;
+	}
+	&:focus {
+		box-shadow: none;
+		outline: none;
+	}
+}
+
+// Text
+
+input[type="text"] {
+	padding-left: 15px;
+	&::placeholder {
+		@extend p;
+		text-transform: uppercase;
+	}
+}
+
+// textarea
+
+textarea {
+	border: 1px solid $grey;
+	@extend p;
+	text-transform: uppercase;
+	padding-left: 15px;
+}
+
+// Radio
+label.radio {
+	border: 1px solid $grey;
+	background: transparent;
+	color: $grey;
+	padding: 15px 25px;
+	
+	@extend p;
+	text-transform: uppercase;
+	line-height: 1em;
+	
+	transition: all .2s ease-out;
+	
+	&:hover {
+		background: #eee;
+	}
+	
+	input[type="radio"]:checked+& {
+		background: $brown;
+		border: 1px solid $brown;
+		color: #fff;
+	}
+}
+input[type="radio"] {
+	display: none;
+}
+
+/*
+	
+	General
+	
+*/
+
+.lines-before-after {
+	position: relative;
+	
+	&:after,
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+			left: 0;
+			top: 50%;
+		transform: translateY(-50%);
+		height: 1px;
+		width: 200px;
+		background: $brown;
+	}
+	&:before {
+		left: auto;
+		right: 0;
+	}
+}
+
+// -------- Foundation -------- //
+
+.grid-container {
+	max-width: 90rem;
+	padding-right: 5vw;
+	padding-left: 5vw;
+	margin: 0 auto;
+}
+
+
+// -------- Section -------- //
+section {
+	padding: 100px 0px;
+	
+	// Section Colors
+	&.grey {
+		background: $grey;
+	}
+	&.off-white {
+		background: $offWhite;
+	}
+	&.brown {
+		background: $brown;
+	}
+	&.beige {
+		background: $beige;
+	}
+}
+
+
+// -------- Lists --------- //
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	
+	li {
+		&:before {
+			content: "-";
+			padding-right: 12px;
+		}
+	}
+	@extend p;
+}
+
+
+// -------- Header -------- //
+
+header {
+	position: absolute;
+	width: 100%;
+	padding: 20px;
+	.header-content {
+		position: absolute;
+			top: 0;
+			left: 0;
+		background: transparent;
+	}
+	.logo {
+		max-width: 200px;
+		img {
+			width: 100%;
+		}
+	}
+	nav {
+		a {
+			margin-left: 80px;
+		}
+	}
+	&.white {
+		nav {
+			a {
+				color: $grey;
+			}
+			.button {
+				color: #fff;
+			}
+		}
+	}
+}
+
+
+// -------- Footer -------- //
+
+footer {
+	background: $grey;
+	padding: 30px;
+	
+	.logo {
+		width: 200px;
+		margin-bottom: 20px;
+	}
+	.greyed-out {
+		color: #666;
+		font-weight: 400;
+	}
+	.padded {
+		margin-bottom: 20px;
+	}
+}
+
+
+// -------- Banner -------- //
+
+.banner {
+	@extend section;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	
+	.banner-content {
+		padding-top: 20%;
+		padding-bottom: 8vh;
+		padding-left:0px;
+		width: 40vw; max-width: 850px;
+		text-align: left;
+		
+		h1 {
+			margin-bottom: 40px;
+		}
+	}
+	&.inner {
+		.banner-content {
+			padding-top: 20%;
+		}
+	}
+}
+
+/*
+	
+	Pages
+	
+*/
+
+// -------- Homepage -------- //
+
+.homepage-options {
+	img {
+		width: 70px;
+	}
+	.headline {
+		padding-bottom: 50px;
+	}
+	.item {
+		padding: 40px 30px;
+		border: 1px solid #000;
+		
+		h2 {
+			padding-top: 30px;
+			padding-bottom: 10px;
+		}
+	}
+}
+
+.homepage-info {
+	h2 {
+		padding-bottom: 30px;
+	}
+}
+
+.homepage-map {
+	h1 {
+		padding-bottom: 30px;
+	}
+	img {
+		max-width: 900px;
+		display: inline-block;
+	}
+}
+
+.homepage-whats-included {
+	p {
+		padding: 20px 0px;
+	}
+}
+
+
+// --------- Whats Included -------- //
+
+.whats-included-features {
+	
+	.header {
+		margin-bottom: 70px;
+	}
+	.items {
+		.cell {
+			margin-right: 50px;
+		}
+	}
+}
+
+.whats-included-questions {
+	p {
+		margin-top: 20px;
+	}
+}
+
+// -------- FAQ ---------- //
+
+.banner.faq {
+	.banner-content {
+		margin: 0 auto;
+	}
+}
+.faqs {
+	h1 {
+		margin-bottom: 70px;
+	}
+}
+
+.dropdown {
+	
+	.dropdown-header {
+		margin-bottom: 20px;
+		.arrow {
+			transform: rotate(-90deg);
+			transition: all .2s ease-out;
+		}
+	}
+	.dropdown-content {
+		max-height: 0px;
+		overflow: hidden;
+		transition: height .2s ease-out;
+	}
+	
+	&.is-open {
+		.dropdown-header {
+			.arrow {
+				transform: rotate(0deg);
+			}
+		}
+		.dropdown-content {
+			max-height: 10000px;
+		}
+	}
+	
+}
+
+.topics {
+	.category {
+		p {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+
+// -------- Contact --------- //
+
+.contact {
+	min-height: 100vh;
+	padding-top: 15%;
+	
+	input {
+		border: 1px solid $grey;
+	}
+	h1 {
+		margin-bottom: 70px;
+	}
+}
+.contact-info {
+	h3 {
+		margin-top: 20px;
+	}
+}

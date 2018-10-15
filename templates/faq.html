@@ -1,0 +1,63 @@
+{% extends '_layout' %}
+{% block content %}
+
+<section class="banner inner faq" style="background-image: url('assets/images/faq-banner.jpg');">
+	<div class="grid-container">
+		<div class="banner-content">
+			
+			<div class="grid-x align-center">
+				<div class="shrink cell">
+					<h1 class="white">Find Your Question</h1>
+					<form method="get">
+						<input type="search" name="q" />
+						<input type="submit" class="white" value="search" />
+					</form>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+<section class="faqs">
+	<div class="grid-container">
+		<div class="grid-x align-center">
+			
+			<div class="small-12 cell">
+				<h1 class="text-center">Frequently Asked Questions</h1>
+			</div>
+			<div class="small-12 medium-10 cell">
+				<div class="dropdown">
+					
+					<div class="dropdown-header">
+						<div class="grid-x">
+							<div class="auto cell"><p class="bold">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh e
+	uismod tincidunt?</p></div>
+							<div class="shrink cell"><img class="arrow" src="assets/icons/down-arrow.png" /></div>
+						</div>
+					</div>
+					<div class="dropdown-content">
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio </p>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<section class="topics">
+		<div class="grid-container">
+			<h1 class="text-center lines-before-after">Browse By Topic</h1>
+			<div class="grid-x">
+				<div class="small-12 medium-6 large-4 cell category">
+					<h3>Faq Category One</h3>
+					<p>Lorem Ipsum Dolor</p>
+					<p>Ipsum Sit</p>
+					<p>Lorem dolor sit</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

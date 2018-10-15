@@ -1,0 +1,468 @@
+/*
+	
+	
+	Stylesheet for Offsite
+	
+	
+*/
+@import url(fonts.css);
+@import url(foundation.min.css);
+/*
+	
+	Variables
+	
+*/
+/*
+	
+	Utlities
+	
+*/
+@media (min-width: 0px) {
+  .small-text-center {
+    text-align: center; }
+  .small-text-left {
+    text-align: left; }
+  .small-text-right {
+    text-align: right; } }
+
+@media (min-width: 640px) {
+  .med-text-center {
+    text-align: center; }
+  .med-text-left {
+    text-align: left; }
+  .med-text-right {
+    text-align: right; } }
+
+@media (min-width: 1024px) {
+  .lg-text-center {
+    text-align: center; }
+  .lg-text-left {
+    text-align: left; }
+  .lg-text-right {
+    text-align: right; } }
+
+/*
+	
+	Typography
+	
+	--
+	Header One - Top level header for banners and big sections.
+	
+	--
+	Header Two - Header for less smaller sections.
+	
+	--
+	Header Three - Header for smaller paragraphs and subheader underneath header two
+
+	
+*/
+h1, h2, h3, p, a, .button,
+input[type="submit"], .link, input[type="text"]:-ms-input-placeholder, textarea, label.radio, ul {
+  color: #464447; }
+h1, h2, h3, p, a, .button,
+input[type="submit"], .link, input[type="text"]::placeholder, textarea, label.radio, ul {
+  color: #464447; }
+  h1.black, h2.black, h3.black, p.black, a.black, .black.button,
+  input.black[type="submit"], .black.link, input.black[type="text"]:-ms-input-placeholder, textarea.black, label.black.radio, ul.black {
+    color: #000; }
+  h1.black, h2.black, h3.black, p.black, a.black, .black.button,
+  input.black[type="submit"], .black.link, input.black[type="text"]::placeholder, textarea.black, label.black.radio, ul.black {
+    color: #000; }
+  h1 .black, h2 .black, h3 .black, p .black, a .black, .button .black,
+  input[type="submit"] .black, .link .black, input[type="text"]:-ms-input-placeholder .black, textarea .black, label.radio .black, ul .black {
+    color: #000; }
+  h1 .black, h2 .black, h3 .black, p .black, a .black, .button .black,
+  input[type="submit"] .black, .link .black, input[type="text"]::placeholder .black, textarea .black, label.radio .black, ul .black {
+    color: #000; }
+  h1.white, h2.white, h3.white, p.white, a.white, .white.button,
+  input.white[type="submit"], .white.link, input.white[type="text"]:-ms-input-placeholder, textarea.white, label.white.radio, ul.white {
+    color: #f2f2f2; }
+  h1.white, h2.white, h3.white, p.white, a.white, .white.button,
+  input.white[type="submit"], .white.link, input.white[type="text"]::placeholder, textarea.white, label.white.radio, ul.white {
+    color: #f2f2f2; }
+  h1 .white, h2 .white, h3 .white, p .white, a .white, .button .white,
+  input[type="submit"] .white, .link .white, input[type="text"]:-ms-input-placeholder .white, textarea .white, label.radio .white, ul .white {
+    color: #f2f2f2; }
+  h1 .white, h2 .white, h3 .white, p .white, a .white, .button .white,
+  input[type="submit"] .white, .link .white, input[type="text"]::placeholder .white, textarea .white, label.radio .white, ul .white {
+    color: #f2f2f2; }
+  h1.book, h2.book, h3.book, p.book, a.book, .book.button,
+  input.book[type="submit"], .book.link, input.book[type="text"]:-ms-input-placeholder, textarea.book, label.book.radio, ul.book {
+    font-weight: 400; }
+  h1.book, h2.book, h3.book, p.book, a.book, .book.button,
+  input.book[type="submit"], .book.link, input.book[type="text"]::placeholder, textarea.book, label.book.radio, ul.book {
+    font-weight: 400; }
+  h1 .book, h2 .book, h3 .book, p .book, a .book, .button .book,
+  input[type="submit"] .book, .link .book, input[type="text"]:-ms-input-placeholder .book, textarea .book, label.radio .book, ul .book {
+    font-weight: 400; }
+  h1 .book, h2 .book, h3 .book, p .book, a .book, .button .book,
+  input[type="submit"] .book, .link .book, input[type="text"]::placeholder .book, textarea .book, label.radio .book, ul .book {
+    font-weight: 400; }
+  h1.bold, h2.bold, h3.bold, p.bold, a.bold, .bold.button,
+  input.bold[type="submit"], .bold.link, input.bold[type="text"]:-ms-input-placeholder, textarea.bold, label.bold.radio, ul.bold {
+    font-weight: 700; }
+  h1.bold, h2.bold, h3.bold, p.bold, a.bold, .bold.button,
+  input.bold[type="submit"], .bold.link, input.bold[type="text"]::placeholder, textarea.bold, label.bold.radio, ul.bold {
+    font-weight: 700; }
+
+.bold {
+  font-weight: 700; }
+
+h1 {
+  font-family: "proxima-nova", 'Garamond', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.12em;
+  letter-spacing: .284em;
+  text-transform: uppercase; }
+  h1.white {
+    color: #fff; }
+
+h2 {
+  font-family: "gotham", 'Helvetica', 'Verdana', 'Arial', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.16em;
+  letter-spacing: .137em;
+  text-transform: uppercase; }
+  h2.book {
+    font-weight: 400; }
+
+h3 {
+  font-family: "gotham", 'Helvetica', 'Verdana', 'Arial', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.1em;
+  letter-spacing: .137em;
+  text-transform: uppercase; }
+  h3.book {
+    font-weight: 400; }
+  h3.off-white {
+    color: #f2f2f2; }
+
+p, a, .button,
+input[type="submit"], .link, input[type="text"]:-ms-input-placeholder, textarea, label.radio, ul {
+  font-family: "gotham", serif;
+  font-size: .87rem;
+  font-weight: 400;
+  line-height: 2.2em;
+  letter-spacing: .137em; }
+
+p, a, .button,
+input[type="submit"], .link, input[type="text"]::placeholder, textarea, label.radio, ul {
+  font-family: "gotham", serif;
+  font-size: .87rem;
+  font-weight: 400;
+  line-height: 2.2em;
+  letter-spacing: .137em; }
+
+.lowercase {
+  text-transform: none; }
+
+/*
+	
+	Interactive
+	
+	--
+	Button - Use as a class on a tags, filled in
+	
+	--
+	Link - Use as a class on a tags or submissions on forms, underlined
+	
+	--
+	Input[type='radio'] - This is a radio tag, must be set up like this:
+	
+	<input type="radio" id="id-example" name="name-example" />
+	<label for="id-example" class="radio">Lorem Ipsum</label>
+	
+*/
+a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+.button,
+input[type="submit"] {
+  position: relative;
+  padding: 10px 25px;
+  background: #464447;
+  color: #fff;
+  border: 1px solid transparent;
+  transition: all .2s ease-out;
+  transform: translateY(0px);
+  outline: none;
+  text-transform: uppercase; }
+  .button:hover,
+  input[type="submit"]:hover {
+    background: #5b575d;
+    color: #fff; }
+  .button:focus,
+  input[type="submit"]:focus {
+    color: #fff;
+    outline: none; }
+  .button:active,
+  input[type="submit"]:active {
+    transform: translateY(10px); }
+  .button.brown,
+  input[type="submit"].brown {
+    background: #b59b8f; }
+  .button.white,
+  input[type="submit"].white {
+    background: #f2f2f2;
+    color: #464447; }
+
+.link {
+  position: relative;
+  color: #464447;
+  background: transparent;
+  padding: 12px 3px;
+  text-transform: uppercase;
+  transition: all .2s ease-out; }
+  .link:after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #464447;
+    transition: all .2s ease-out; }
+  .link:hover {
+    color: #5b575d; }
+    .link:hover:after {
+      background: #5b575d;
+      bottom: -4px; }
+
+input[type],
+textarea {
+  border-radius: 0px;
+  box-shadow: none;
+  border: none;
+  outline: none; }
+  input[type]:hover,
+  textarea:hover {
+    box-shadow: none;
+    outline: none; }
+  input[type]:focus,
+  textarea:focus {
+    box-shadow: none;
+    outline: none; }
+
+input[type="text"] {
+  padding-left: 15px; }
+  input[type="text"]:-ms-input-placeholder {
+    text-transform: uppercase; }
+  input[type="text"]::placeholder {
+    text-transform: uppercase; }
+
+textarea {
+  border: 1px solid #464447;
+  text-transform: uppercase;
+  padding-left: 15px; }
+
+label.radio {
+  border: 1px solid #464447;
+  background: transparent;
+  color: #464447;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  line-height: 1em;
+  transition: all .2s ease-out; }
+  label.radio:hover {
+    background: #eee; }
+  input[type="radio"]:checked + label.radio {
+    background: #b59b8f;
+    border: 1px solid #b59b8f;
+    color: #fff; }
+
+input[type="radio"] {
+  display: none; }
+
+/*
+	
+	General
+	
+*/
+.lines-before-after {
+  position: relative; }
+  .lines-before-after:after, .lines-before-after:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 200px;
+    background: #b59b8f; }
+  .lines-before-after:before {
+    left: auto;
+    right: 0; }
+
+.grid-container {
+  max-width: 90rem;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  margin: 0 auto; }
+
+section, .banner {
+  padding: 100px 0px; }
+  section.grey, .grey.banner {
+    background: #464447; }
+  section.off-white, .off-white.banner {
+    background: #f2f2f2; }
+  section.brown, .brown.banner {
+    background: #b59b8f; }
+  section.beige, .beige.banner {
+    background: #ecece4; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  ul li:before {
+    content: "-";
+    padding-right: 12px; }
+
+header {
+  position: absolute;
+  width: 100%;
+  padding: 20px; }
+  header .header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent; }
+  header .logo {
+    max-width: 200px; }
+    header .logo img {
+      width: 100%; }
+  header nav a {
+    margin-left: 80px; }
+  header.white nav a {
+    color: #464447; }
+  header.white nav .button {
+    color: #fff; }
+
+footer {
+  background: #464447;
+  padding: 30px; }
+  footer .logo {
+    width: 200px;
+    margin-bottom: 20px; }
+  footer .greyed-out {
+    color: #666;
+    font-weight: 400; }
+  footer .padded {
+    margin-bottom: 20px; }
+
+.banner {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .banner .banner-content {
+    padding-top: 20%;
+    padding-bottom: 8vh;
+    padding-left: 0px;
+    width: 40vw;
+    max-width: 850px;
+    text-align: left; }
+    .banner .banner-content h1 {
+      margin-bottom: 40px; }
+  .banner.inner .banner-content {
+    padding-top: 20%; }
+
+/*
+	
+	Pages
+	
+*/
+.homepage-options img {
+  width: 70px; }
+
+.homepage-options .headline {
+  padding-bottom: 50px; }
+
+.homepage-options .item {
+  padding: 40px 30px;
+  border: 1px solid #000; }
+  .homepage-options .item h2 {
+    padding-top: 30px;
+    padding-bottom: 10px; }
+
+.homepage-info h2 {
+  padding-bottom: 30px; }
+
+.homepage-map h1 {
+  padding-bottom: 30px; }
+
+.homepage-map img {
+  max-width: 900px;
+  display: inline-block; }
+
+.homepage-whats-included p, .homepage-whats-included a, .homepage-whats-included .button, .homepage-whats-included
+input[type="submit"], .homepage-whats-included .link, .homepage-whats-included input[type="text"]:-ms-input-placeholder, .homepage-whats-included textarea, .homepage-whats-included label.radio, .homepage-whats-included ul {
+  padding: 20px 0px; }
+
+.homepage-whats-included p, .homepage-whats-included a, .homepage-whats-included .button, .homepage-whats-included
+input[type="submit"], .homepage-whats-included .link, .homepage-whats-included input[type="text"]::placeholder, .homepage-whats-included textarea, .homepage-whats-included label.radio, .homepage-whats-included ul {
+  padding: 20px 0px; }
+
+.whats-included-features .header {
+  margin-bottom: 70px; }
+
+.whats-included-features .items .cell {
+  margin-right: 50px; }
+
+.whats-included-questions p, .whats-included-questions a, .whats-included-questions .button, .whats-included-questions
+input[type="submit"], .whats-included-questions .link, .whats-included-questions input[type="text"]:-ms-input-placeholder, .whats-included-questions textarea, .whats-included-questions label.radio, .whats-included-questions ul {
+  margin-top: 20px; }
+
+.whats-included-questions p, .whats-included-questions a, .whats-included-questions .button, .whats-included-questions
+input[type="submit"], .whats-included-questions .link, .whats-included-questions input[type="text"]::placeholder, .whats-included-questions textarea, .whats-included-questions label.radio, .whats-included-questions ul {
+  margin-top: 20px; }
+
+.banner.faq .banner-content {
+  margin: 0 auto; }
+
+.faqs h1 {
+  margin-bottom: 70px; }
+
+.dropdown .dropdown-header {
+  margin-bottom: 20px; }
+  .dropdown .dropdown-header .arrow {
+    transform: rotate(-90deg);
+    transition: all .2s ease-out; }
+
+.dropdown .dropdown-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: height .2s ease-out; }
+
+.dropdown.is-open .dropdown-header .arrow {
+  transform: rotate(0deg); }
+
+.dropdown.is-open .dropdown-content {
+  max-height: 10000px; }
+
+.topics .category p, .topics .category a, .topics .category .button, .topics .category
+input[type="submit"], .topics .category .link, .topics .category input[type="text"]:-ms-input-placeholder, .topics .category textarea, .topics .category label.radio, .topics .category ul {
+  margin-bottom: 0px; }
+
+.topics .category p, .topics .category a, .topics .category .button, .topics .category
+input[type="submit"], .topics .category .link, .topics .category input[type="text"]::placeholder, .topics .category textarea, .topics .category label.radio, .topics .category ul {
+  margin-bottom: 0px; }
+
+.contact {
+  min-height: 100vh;
+  padding-top: 15%; }
+  .contact input {
+    border: 1px solid #464447; }
+  .contact h1 {
+    margin-bottom: 70px; }
+
+.contact-info h3 {
+  margin-top: 20px; }
+
+/*# sourceMappingURL=style.css.map */
