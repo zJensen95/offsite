@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "foundation-sites": "^6.4.3",
     "fullpage.js": "^2.9.7",
     "gulp-autoprefixer": "^3.1.1",
     "jquery": "^3.3.1",
     "motion-ui": "^1.2.3",
     "scrollmagic": "^2.0.5",
+    "stripe": "^6.12.1",
     "what-input": "^4.3.1"
   },
   "devDependencies": {

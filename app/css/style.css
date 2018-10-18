@@ -7,6 +7,10 @@
 */
 @import url(fonts.css);
 @import url(foundation.min.css);
+.test-form {
+  padding-top: 50vh;
+  margin-left: 20vw; }
+
 @media (max-width: 1024px) {
   html {
     font-size: 80%; } }

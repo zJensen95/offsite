@@ -1,7 +1,9 @@
 {
   "require": {
     "craftcms/cms": "^3.0.0",
-    "vlucas/phpdotenv": "^2.4.0"
+    "vlucas/phpdotenv": "^2.4.0",
+    "matt-west/craft-recaptcha": "v1.2.0",
+    "lukeyouell/craft-stripecheckout": "2.0.2"
   },
   "autoload": {
     "psr-4": {
