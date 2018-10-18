@@ -23,7 +23,26 @@
 
 </head>
 <body>
-	
+	<menu id="menu">
+		<div class="grid-x align-center align-middle">
+			<div class="small-12 cell">
+				<div class="grid-x align-center">
+					<div class="cell links">
+						<a href="{{ siteUrl }}whats-included">Whats Included</a>
+					</div>
+					<div class="cell links">
+						<a href="{{ siteUrl }}faq">FAQ</a>
+					</div>
+					<div class="cell links">
+						<a href="{{ siteUrl }}contact">Contact</a>
+					</div>
+					<div class="cell links">
+						<a href="{{ siteUrl }}booking" class="button brown">Booking</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</menu>
 	<header {% if header is defined %}class="white"{% endif %}>
 		<div class="grid-container">
 		<div class="header-container">
@@ -37,8 +56,8 @@
 					 {% endif %}
 				 </a>
 			 </div>
-			 <div class="auto cell">
-				 <nav>
+			 <div class="auto cell text-right">
+				 <nav class="hide-for-small show-for-medium">
 					 <div class="grid-x align-right">
 						 <div class="shrink cell">
 							 <a href="{{ siteUrl }}whats-included">Whats Included</a>
@@ -54,6 +73,13 @@
 						 </div>
 					 </div>
 				 </nav>
+				 <div class="hamburger hide-for-medium" id="hamburger">
+					 {% if header is defined %}
+					 <img class="ham-img" src="assets/icons/hamburger-black.svg" />
+					 {% else %}
+					 <img class="ham-img" src="assets/icons/hamburger-white.svg" />
+					 {% endif %}
+				 </div>
 			 </div>
 		 </div>
 		</div>
@@ -65,8 +91,8 @@
 		{% endblock %}
 	</main>
 	<footer>
-		<div class="grid-x align-justify small-align-center">
-			<div class="small-12 medium-shrink cell">
+		<div class="grid-x lg-align-justify align-center">
+			<div class="small-12 medium-shrink cell small-text-center lg-text-left">
 				<img class="logo" src="assets/icons/Offsite-Logo-Primary-White.png" />
 				<h3 class="greyed-out">©2018 offsite, all rights reserved<br>Site by nominee</h3>
 			</div>

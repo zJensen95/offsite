@@ -10,6 +10,19 @@
 @import 'fonts.css';
 @import 'foundation.min.css';
 
+@media (max-width: 1024px) {
+	html {
+		font-size: 80%;
+	}
+}
+
+@media (max-width: 640px) {
+	html {
+		font-size: 75%;
+	}
+}
+
+
 /*
 	
 	Variables
@@ -29,6 +42,14 @@ $beige: #ecece4;
 	Utlities
 	
 */
+
+.bg-image {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: 300px;
+}
 
 @media (min-width: 0px) {
 	.small-text-center {
@@ -63,6 +84,20 @@ $beige: #ecece4;
 	}
 	.lg-text-right {
 		text-align: right;
+	}
+}
+
+@media (min-width: 0px) {
+	.small-align-center {
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 1024px) {
+	.lg-align-justify {
+		-ms-flex-pack: justify;
+		justify-content: space-between;
 	}
 }
 
@@ -373,6 +408,15 @@ input[type="radio"] {
 	}
 }
 
+@media (max-width: 640px) {
+	.lines-before-after {
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+}
+
 // -------- Foundation -------- //
 
 .grid-container {
@@ -402,6 +446,12 @@ section {
 	}
 }
 
+@media (max-width: 640px) {
+	section {
+		padding: 60px 0px;
+	}
+}
+
 
 // -------- Lists --------- //
 
@@ -426,6 +476,7 @@ header {
 	position: absolute;
 	width: 100%;
 	padding: 20px;
+	z-index: 400;
 	.header-content {
 		position: absolute;
 			top: 0;
@@ -451,6 +502,45 @@ header {
 			.button {
 				color: #fff;
 			}
+		}
+	}
+	.hamburger {
+		width: 30px;
+		display: inline-block;
+		cursor: pointer;
+	}
+}
+
+menu {
+	background: $grey;
+	position: fixed;
+	z-index: 300;
+		top: 0;
+		left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 15px;
+	
+	transform: translateY(-100%);
+	transition: all .3s ease-out;
+	
+	.grid-x {
+		height: 100%;
+	}	
+	&.is-open {
+		transform: translateY(0%);
+	}
+	.links {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 640px) {
+	header {
+		padding: 10px;
+		.grid-container {
+			padding: 0px;
 		}
 	}
 }
@@ -503,6 +593,22 @@ footer {
 	}
 }
 
+@media (max-width: 1024px) {
+	.banner {
+		.banner-content {
+			width: 60vw;
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.banner {
+		.banner-content {
+			width: 90vw;
+		}
+	}
+}
+
 /*
 	
 	Pages
@@ -551,6 +657,13 @@ footer {
 	}
 }
 
+@media (max-width: 640px) {
+	.homepage-info {
+		.bg-image {
+			margin-bottom: 40px;
+		}
+	}
+} 
 
 // --------- Whats Included -------- //
 
@@ -562,6 +675,7 @@ footer {
 	.items {
 		.cell {
 			margin-right: 50px;
+			margin-bottom: 20px;
 		}
 	}
 }
@@ -638,5 +752,11 @@ footer {
 .contact-info {
 	h3 {
 		margin-top: 20px;
+	}
+}
+
+@media (max-width: 640px) {
+	.contact-info {
+		margin-top: 50px;
 	}
 }

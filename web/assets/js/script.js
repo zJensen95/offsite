@@ -23,3 +23,22 @@ for ( var i = 0; dropdowns.length > i; i ++) {
 	});
 	
 }
+
+var menu = document.getElementById('menu');
+function menuOpenClose() {
+	
+	if (menu.classList.contains('is-open')) {
+		
+		menu.classList.remove('is-open');
+		
+	} else {
+		
+		menu.classList.add('is-open');
+		
+	}
+	
+}
+
+document.getElementById("hamburger").addEventListener("click",  function() {
+	menuOpenClose();
+});
