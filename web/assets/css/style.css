@@ -133,6 +133,12 @@ input[type="submit"], .link, input[type="text"]::placeholder, textarea, label.ra
   h1.bold, h2.bold, h3.bold, p.bold, a.bold, .bold.button,
   input.bold[type="submit"], .bold.link, input.bold[type="text"]::placeholder, textarea.bold, label.bold.radio, ul.bold {
     font-weight: 700; }
+  h1.uppercase, h2.uppercase, h3.uppercase, p.uppercase, a.uppercase, .uppercase.button,
+  input.uppercase[type="submit"], .uppercase.link, input.uppercase[type="text"]:-ms-input-placeholder, textarea.uppercase, label.uppercase.radio, ul.uppercase {
+    text-transform: uppercase; }
+  h1.uppercase, h2.uppercase, h3.uppercase, p.uppercase, a.uppercase, .uppercase.button,
+  input.uppercase[type="submit"], .uppercase.link, input.uppercase[type="text"]::placeholder, textarea.uppercase, label.uppercase.radio, ul.uppercase {
+    text-transform: uppercase; }
 
 .bold {
   font-weight: 700; }
@@ -209,6 +215,8 @@ a {
   color: #fff;
   text-transform: uppercase;
   font-weight: 500; }
+  a:hover {
+    color: #fdfdfd; }
 
 .button,
 input[type="submit"] {
@@ -466,6 +474,9 @@ footer {
     padding-top: 30px;
     padding-bottom: 10px; }
 
+#map {
+  height: 450px; }
+
 .homepage-info h2 {
   padding-bottom: 30px; }
 
@@ -548,5 +559,77 @@ input[type="submit"], .topics .category .link, .topics .category input[type="tex
 @media (max-width: 640px) {
   .contact-info {
     margin-top: 50px; } }
+
+.booking-container {
+  min-height: calc(100vh - 155px); }
+
+.booking-header {
+  margin-top: 70px; }
+
+.booking-nav {
+  margin-top: 30px;
+  margin-bottom: 80px; }
+  .booking-nav h3 {
+    opacity: .5; }
+    .booking-nav h3:hover {
+      opacity: .75; }
+    .booking-nav h3.is-active {
+      opacity: 1; }
+
+.booking-choices .item {
+  padding: 30px;
+  max-width: 300px;
+  border: 1px solid #e5e5e5;
+  transition: all .3s ease-out; }
+  .booking-choices .item p.bold, .booking-choices .item a.bold, .booking-choices .item .bold.button, .booking-choices .item
+  input.bold[type="submit"], .booking-choices .item .bold.link, .booking-choices .item input.bold[type="text"]:-ms-input-placeholder, .booking-choices .item textarea.bold, .booking-choices .item label.bold.radio, .booking-choices .item ul.bold {
+    margin-bottom: 0px; }
+  .booking-choices .item p.bold, .booking-choices .item a.bold, .booking-choices .item .bold.button, .booking-choices .item
+  input.bold[type="submit"], .booking-choices .item .bold.link, .booking-choices .item input.bold[type="text"]::placeholder, .booking-choices .item textarea.bold, .booking-choices .item label.bold.radio, .booking-choices .item ul.bold {
+    margin-bottom: 0px; }
+  .booking-choices .item h3 {
+    margin-bottom: 20px; }
+  .booking-choices .item:hover {
+    border: 1px solid #666; }
+  .booking-choices .item.is-active {
+    padding: 20px;
+    background: #464447;
+    border: 1px solid #ecece4;
+    box-shadow: 0px 0px 0px 10px #464447;
+    margin-top: 10px; }
+    .booking-choices .item.is-active h3 {
+      color: #ecece4; }
+    .booking-choices .item.is-active p, .booking-choices .item.is-active a, .booking-choices .item.is-active .button, .booking-choices .item.is-active
+    input[type="submit"], .booking-choices .item.is-active .link, .booking-choices .item.is-active input[type="text"]:-ms-input-placeholder, .booking-choices .item.is-active textarea, .booking-choices .item.is-active label.radio, .booking-choices .item.is-active ul {
+      color: #ecece4; }
+    .booking-choices .item.is-active p, .booking-choices .item.is-active a, .booking-choices .item.is-active .button, .booking-choices .item.is-active
+    input[type="submit"], .booking-choices .item.is-active .link, .booking-choices .item.is-active input[type="text"]::placeholder, .booking-choices .item.is-active textarea, .booking-choices .item.is-active label.radio, .booking-choices .item.is-active ul {
+      color: #ecece4; }
+    .booking-choices .item.is-active p.bold, .booking-choices .item.is-active a.bold, .booking-choices .item.is-active .bold.button, .booking-choices .item.is-active
+    input.bold[type="submit"], .booking-choices .item.is-active .bold.link, .booking-choices .item.is-active input.bold[type="text"]:-ms-input-placeholder, .booking-choices .item.is-active textarea.bold, .booking-choices .item.is-active label.bold.radio, .booking-choices .item.is-active ul.bold {
+      margin-bottom: 30px; }
+    .booking-choices .item.is-active p.bold, .booking-choices .item.is-active a.bold, .booking-choices .item.is-active .bold.button, .booking-choices .item.is-active
+    input.bold[type="submit"], .booking-choices .item.is-active .bold.link, .booking-choices .item.is-active input.bold[type="text"]::placeholder, .booking-choices .item.is-active textarea.bold, .booking-choices .item.is-active label.bold.radio, .booking-choices .item.is-active ul.bold {
+      margin-bottom: 30px; }
+
+.booking-choices.add-ons .item.is-active {
+  margin-top: 0px;
+  padding: 30px;
+  box-shadow: none; }
+
+.booking-submission {
+  margin-top: 80px; }
+  .booking-submission p.light-grey, .booking-submission a.light-grey, .booking-submission .light-grey.button, .booking-submission
+  input.light-grey[type="submit"], .booking-submission .light-grey.link, .booking-submission input.light-grey[type="text"]:-ms-input-placeholder, .booking-submission textarea.light-grey, .booking-submission label.light-grey.radio, .booking-submission ul.light-grey {
+    margin-top: 20px;
+    color: #999; }
+  .booking-submission p.light-grey, .booking-submission a.light-grey, .booking-submission .light-grey.button, .booking-submission
+  input.light-grey[type="submit"], .booking-submission .light-grey.link, .booking-submission input.light-grey[type="text"]::placeholder, .booking-submission textarea.light-grey, .booking-submission label.light-grey.radio, .booking-submission ul.light-grey {
+    margin-top: 20px;
+    color: #999; }
+  .booking-submission .button.light-grey {
+    background: #f2f2f2;
+    color: #464447;
+    font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */

@@ -66,7 +66,7 @@
 				<h2>Lorem ipsum dolor sit amet</h2>
 				<p>This talks about who offsite is for and the people that can take advantage of it. Talk about the different renting models you have - daily, hourly, recurring. Show them how this space could suit their needs and what it is used for.</p>
 			</div>
-			<div class="small-12 medium-6 large-5 small-order-1 medium-order-2 cell bg-image" style="background-image: url('assets/images/homepage-one.png')"></div>
+			<div class="small-12 medium-6 large-5 small-order-1 medium-order-2 cell bg-image" style="background-image: url('assets/images/test_still_03.jpg')"></div>
 			
 		</div>
 	</div>
@@ -77,7 +77,7 @@
 		<div class="grid-x grid-margin-x align-justify align-stretch">
 			
 			
-			<div class="small-12 medium-6 large-5 cell bg-image" style="background-image: url('assets/images/homepage-two.png')"></div>
+			<div class="small-12 medium-6 large-5 cell bg-image" style="background-image: url('assets/images/test_still_05.jpg')"></div>
 			<div class="small-12 medium-6 large-5 cell">
 				<h2>Lorem ipsum dolor sit amet</h2>
 				<p>This is a space to talk about the location. How many people it can hold and what kind of square footage offsite has. Talk about the amenities you offer and the services. Talk about the surrounding area and how it overlooks OKC. Generally just giving people an idea of what the space is like and if it could suit their needs.</p>
@@ -93,7 +93,7 @@
 			
 			<div class="small-12 cell text-center">
 				<h1>The heart of OKC</h1>
-				<img src="assets/icons/map.svg" />
+				<div id="map"></div>
 			</div>
 			
 		</div>
@@ -113,5 +113,188 @@
 		</div>
 	</div>
 </section>
+
+<script>
+  var map;
+  function initMap() {
+	  var myLatLing = {lat: 35.461, lng: -97.508};
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: myLatLing,
+      zoom: 16,
+      styles:[
+						    {
+						        "featureType": "administrative",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "visibility": "off"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "administrative",
+						        "elementType": "labels.text.fill",
+						        "stylers": [
+						            {
+						                "color": "#444444"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "landscape",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "color": "#f2f2f2"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "landscape",
+						        "elementType": "geometry.fill",
+						        "stylers": [
+						            {
+						                "color": "#f9f9f9"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "poi",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "visibility": "off"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "road",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "saturation": -100
+						            },
+						            {
+						                "lightness": 45
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "road.highway",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "visibility": "simplified"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "road.highway",
+						        "elementType": "geometry.fill",
+						        "stylers": [
+						            {
+						                "color": "#b59b8f"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "road.arterial",
+						        "elementType": "geometry.fill",
+						        "stylers": [
+						            {
+						                "color": "#e1e1e1"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "road.arterial",
+						        "elementType": "labels.text.fill",
+						        "stylers": [
+						            {
+						                "color": "#ababab"
+						            },
+						            {
+						                "weight": "1.00"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "road.arterial",
+						        "elementType": "labels.icon",
+						        "stylers": [
+						            {
+						                "visibility": "off"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "road.local",
+						        "elementType": "geometry.fill",
+						        "stylers": [
+						            {
+						                "color": "#ecece4"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "transit",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "visibility": "off"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "water",
+						        "elementType": "all",
+						        "stylers": [
+						            {
+						                "color": "#46bcec"
+						            },
+						            {
+						                "visibility": "on"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "water",
+						        "elementType": "geometry.fill",
+						        "stylers": [
+						            {
+						                "color": "#d4d4d4"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "water",
+						        "elementType": "geometry.stroke",
+						        "stylers": [
+						            {
+						                "color": "#464447"
+						            }
+						        ]
+						    },
+						    {
+						        "featureType": "water",
+						        "elementType": "labels.text.fill",
+						        "stylers": [
+						            {
+						                "color": "#868686"
+						            }
+						        ]
+						    }
+						]
+    });
+    
+    var marker = new google.maps.Marker({
+		  position: myLatLing,
+		  map: map,
+		  title: "Offsite",
+		  icon: 'assets/icons/logo_diamond.png'
+	  });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfeSZOAo4-8489SctN80YwEkpoclmklwM&callback=initMap" async defer></script>
 
 {% endblock %}

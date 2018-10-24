@@ -1,4 +1,4 @@
-// Create a Stripe client.
+/* // Create a Stripe client.
 var stripe = Stripe('pk_test_GnWlCqFMSv5jN8XSaEOMqasY');
 
 // Create an instance of Elements.
@@ -54,7 +54,7 @@ form.addEventListener('submit', function(event) {
       stripeTokenHandler(result.token);
     }
   });
-});
+}); */
 
 function openDrop(e) {
 	

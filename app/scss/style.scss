@@ -150,6 +150,10 @@ h1, h2, h3, p {
 	&.bold {
 		font-weight: 700;
 	}
+	
+	&.uppercase {
+		text-transform: uppercase;
+	}
 }
 
 .bold {
@@ -247,6 +251,10 @@ a {
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 500;
+	
+	&:hover {
+		color: #fdfdfd;
+	}
 }
 
 // Button
@@ -640,6 +648,10 @@ footer {
 	}
 }
 
+#map {
+	height: 450px;
+}
+
 .homepage-info {
 	h2 {
 		padding-bottom: 30px;
@@ -763,5 +775,93 @@ footer {
 @media (max-width: 640px) {
 	.contact-info {
 		margin-top: 50px;
+	}
+}
+
+
+// -------- Booking -------- //
+
+.booking-container {
+	min-height: calc(100vh - 155px);
+}
+.booking-header {
+	margin-top: 70px;
+}
+.booking-nav {
+	margin-top: 30px;
+	margin-bottom: 80px;
+	
+	h3 {
+		opacity: .5;
+		&:hover {
+			opacity: .75;
+		}
+		&.is-active {
+			opacity: 1;
+		}
+	}
+}
+
+.booking-choices {
+	
+	.item {
+		padding: 30px;
+		max-width: 300px;
+		border: 1px solid #e5e5e5;
+		
+		transition: all .3s ease-out;
+		
+		p.bold {
+			margin-bottom: 0px;
+		}
+		h3 {
+			margin-bottom: 20px;
+		}
+		
+		&:hover {
+			border: 1px solid #666;
+		}
+		
+		&.is-active {
+			padding: 20px;
+			background: $grey;
+			border: 1px solid $beige;
+			box-shadow: 0px 0px 0px 10px $grey;
+			margin-top: 10px;
+			
+			h3 {
+				color: $beige;
+			}
+			p {
+				color: $beige;
+			}
+			p.bold {
+				margin-bottom: 30px;
+			}
+		}
+	}
+	
+	&.add-ons {
+		.item {
+			&.is-active {
+				margin-top: 0px;
+				padding: 30px;
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+.booking-submission {
+	margin-top: 80px;
+
+	p.light-grey {
+		margin-top: 20px;
+		color: #999;
+	}
+	.button.light-grey {
+		background: #f2f2f2;
+		color: #464447;
+		font-weight: 700;
 	}
 }
