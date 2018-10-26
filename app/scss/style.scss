@@ -124,7 +124,7 @@ $beige: #ecece4;
 
 
 // Colors
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
 	color: $grey;
 	
 	&.black {
@@ -207,6 +207,16 @@ h3 {
 	&.off-white {
 		color: $offWhite;
 	}
+}
+
+h4 {
+	font-family: "gotham", "Helvetica", "Verdana", "Arial", sans-serif;
+	font-size: 1.1rem;
+	font-weight: 700;
+	
+	line-height: 1.1em;
+	letter-spacing: .136em;
+	text-transform: uppercase;
 }
 
 // Paragraph
@@ -803,15 +813,36 @@ footer {
 }
 
 .booking-choices {
-	
+	.icon {
+		margin-bottom: 30px;
+	}
+	.grid-y {
+		height: 100%;
+	}
+	.inputs {
+		h4 {
+			margin-top: 30px;
+		}
+		input {
+			margin-top: 10px;
+			border: 1px solid #aaa;
+			&:hover {
+				border: 1px solid #000;
+			}
+			&:focus {
+				border: 1px solid #000;
+			}
+		}
+	}
 	.item {
 		padding: 30px;
 		max-width: 300px;
 		border: 1px solid #e5e5e5;
+		cursor: pointer;
 		
 		transition: all .3s ease-out;
 		
-		p.bold {
+		h3.bold {
 			margin-bottom: 0px;
 		}
 		h3 {
@@ -820,6 +851,12 @@ footer {
 		
 		&:hover {
 			border: 1px solid #666;
+		}
+		.icon.white {
+			display: none;
+		}
+		.icon.black {
+			display: inline-block;
 		}
 		
 		&.is-active {
@@ -835,8 +872,14 @@ footer {
 			p {
 				color: $beige;
 			}
-			p.bold {
+			h3.bold {
 				margin-bottom: 30px;
+			}
+			.icon.white {
+				display: inline-block;
+			}
+			.icon.black {
+				display: none;
 			}
 		}
 	}
@@ -852,6 +895,61 @@ footer {
 	}
 }
 
+#calendar,
+#day {
+	h2 {
+		font-size: 1.2rem;
+		font-weight: 400;
+	}
+	th, 
+	td, 
+	thead, 
+	tbody, 
+	.fc-divider, 
+	.fc-row, 
+	.fc-content, 
+	.fc-popover, 
+	.fc-list-view, 
+	.fc-list-heading td {
+		border-color: #000;
+	}
+	.fc-event-container {
+		background: $brown;
+	}
+	.fc-event {
+		background: $brown;
+		border: none;
+	}
+	.fc-button {
+		background: none;
+		box-shadow: none;
+		text-shadow: none;
+		border: none;
+		height: auto;
+	}
+	.fc-day-number {
+		@extend p;
+	}
+	.fc-bgevent {
+		opacity: 1;
+		background: $beige;
+	}
+	.fc-content-skeleton {
+		thead {
+			height: 0px;
+		}
+	}
+	.fc-title {
+		@extend p;
+		display: none;
+		text-transform: none;
+		color: #fff;
+	}
+	.fc-today {
+		background: #fff;
+	}
+}
+
 .booking-submission {
 	margin-top: 80px;
 
@@ -863,5 +961,35 @@ footer {
 		background: #f2f2f2;
 		color: #464447;
 		font-weight: 700;
+	}
+}
+#day {
+	th, 
+	td, 
+	thead, 
+	tbody, 
+	.fc-divider, 
+	.fc-row, 
+	.fc-content, 
+	.fc-popover, 
+	.fc-list-view, 
+	.fc-list-heading td {
+		border-color: #B3B3B3;
+	}
+	.fc-list-item-time {
+		@extend p;
+		text-align: center;
+		background: $brown;
+		color: #fff;
+		font-weight: 700;
+	}
+	.fc-list-item-title {
+		display: none;
+	}
+	.fc-list-heading {
+		display: none;
+	}
+	.fc-list-item-marker {
+		display: none;
 	}
 }

@@ -1,60 +1,61 @@
-/* // Create a Stripe client.
-var stripe = Stripe('pk_test_GnWlCqFMSv5jN8XSaEOMqasY');
+$(function() {
+	
+	$('#calendar').fullCalendar({
+		header: {
+			left: 'prev',
+			center: 'title',
+			right: 'next'
+		},
 
-// Create an instance of Elements.
-var elements = stripe.elements();
-
-// Custom styling can be passed to options when creating an Element.
-// (Note that this demo uses a wider set of styles than the guide below.)
-var style = {
-  base: {
-    color: '#32325d',
-    lineHeight: '18px',
-    fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-    fontSmoothing: 'antialiased',
-    fontSize: '16px',
-    '::placeholder': {
-      color: '#aab7c4'
-    }
-  },
-  invalid: {
-    color: '#fa755a',
-    iconColor: '#fa755a'
-  }
-};
-
-// Create an instance of the card Element.
-var card = elements.create('card', {style: style});
-
-// Add an instance of the card Element into the `card-element` <div>.
-card.mount('#card-element');
-
-// Handle real-time validation errors from the card Element.
-card.addEventListener('change', function(event) {
-  var displayError = document.getElementById('card-errors');
-  if (event.error) {
-    displayError.textContent = event.error.message;
-  } else {
-    displayError.textContent = '';
-  }
-});
-
-// Handle form submission.
-var form = document.getElementById('payment-form');
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  stripe.createToken(card).then(function(result) {
-    if (result.error) {
-      // Inform the user if there was an error.
-      var errorElement = document.getElementById('card-errors');
-      errorElement.textContent = result.error.message;
-    } else {
-      // Send the token to your server.
-      stripeTokenHandler(result.token);
-    }
-  });
-}); */
+		showNonCurrentDates: false,
+		fixedWeekCount: false,
+		columnHeader: false,
+		
+		events: [
+			{
+				title: 'Test',
+				start: '2018-10-11T8:00:00',
+				end: '2018-10-11T12:00:00'
+			},
+			{
+				title: 'Test One',
+				start: '2018-10-25T12:00:00',
+				end: '2018-10-25T14:00:00'
+			},
+			{
+				title: 'Test Two',
+				start: '2018-10-25T15:00:00',
+				end: '2018-10-25T17:00:00'
+			}
+		]
+	})
+	
+	$("#day").fullCalendar({
+		defaultView: 'listDay',
+		header: {
+			left: '',
+			center: 'title',
+			right: ''
+		},
+		events: [
+			{
+				title: 'Test',
+				start: '2018-10-11'
+			},
+			{
+				title: 'Test One',
+				start: '2018-10-25T12:00:00',
+				end: '2018-10-25T14:00:00'
+			},
+			{
+				title: 'Test Two',
+				start: '2018-10-25T15:00:00',
+				end: '2018-10-25T17:00:00'
+			}
+		]
+	})
+	
+}); 
 
 function openDrop(e) {
 	
@@ -79,6 +80,17 @@ for ( var i = 0; dropdowns.length > i; i ++) {
 		openDrop(this);
 		
 	});
+	
+}
+
+function bookingChoose($this) {
+	
+	var active = document.getElementsByClassName('is-active');
+	$(active).each(function() {
+		this.classList.remove("is-active");
+	});
+	
+	$this.classList.add("is-active");
 	
 }
 

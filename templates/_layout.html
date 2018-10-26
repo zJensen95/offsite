@@ -12,11 +12,8 @@
 	
 	<!-- Stylesheet -->
 	<link href="{{ siteUrl }}assets/css/foundation.min.css" rel="stylesheet"/>
+	<link href="{{ siteUrl }}assets/js/fullcalendar/fullcalendar.css" rel="stylesheet"/>
 	<link href="{{ siteUrl }}assets/css/style.css" rel="stylesheet"/>
-	
-	<!-- Scripts -->
-	<script src="{{ siteUrl }}assets/js/jquery.min.js"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 {% block head %}
 
 {% endblock %}
@@ -102,7 +99,12 @@
 			</div>
 		</div>
 	</footer>
-	
+
+<!-- Scripts -->
+<script src="assets/js/jquery.js"></script>
+<script src="{{ siteUrl }}assets/js/moment.js"></script>
+<script src="{{ siteUrl }}assets/js/fullcalendar/fullcalendar.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <script src="{{ siteUrl }}assets/js/script.js"></script>
 </script>
 </body>

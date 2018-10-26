@@ -85,59 +85,95 @@
 
 	
 */
-h1, h2, h3, p, a, .button,
-input[type="submit"], .link, input[type="text"]:-ms-input-placeholder, textarea, label.radio, ul {
+h1, h2, h3, h4, p, a, .button,
+input[type="submit"], .link, input[type="text"]:-ms-input-placeholder, textarea, label.radio, ul, #calendar .fc-day-number,
+#day .fc-day-number, #calendar .fc-title,
+#day .fc-title, #day .fc-list-item-time {
   color: #464447; }
-h1, h2, h3, p, a, .button,
-input[type="submit"], .link, input[type="text"]::placeholder, textarea, label.radio, ul {
+h1, h2, h3, h4, p, a, .button,
+input[type="submit"], .link, input[type="text"]::placeholder, textarea, label.radio, ul, #calendar .fc-day-number,
+#day .fc-day-number, #calendar .fc-title,
+#day .fc-title, #day .fc-list-item-time {
   color: #464447; }
-  h1.black, h2.black, h3.black, p.black, a.black, .black.button,
-  input.black[type="submit"], .black.link, input.black[type="text"]:-ms-input-placeholder, textarea.black, label.black.radio, ul.black {
+  h1.black, h2.black, h3.black, h4.black, p.black, a.black, .black.button,
+  input.black[type="submit"], .black.link, input.black[type="text"]:-ms-input-placeholder, textarea.black, label.black.radio, ul.black, #calendar .black.fc-day-number,
+  #day .black.fc-day-number, #calendar .black.fc-title,
+  #day .black.fc-title, #day .black.fc-list-item-time {
     color: #000; }
-  h1.black, h2.black, h3.black, p.black, a.black, .black.button,
-  input.black[type="submit"], .black.link, input.black[type="text"]::placeholder, textarea.black, label.black.radio, ul.black {
+  h1.black, h2.black, h3.black, h4.black, p.black, a.black, .black.button,
+  input.black[type="submit"], .black.link, input.black[type="text"]::placeholder, textarea.black, label.black.radio, ul.black, #calendar .black.fc-day-number,
+  #day .black.fc-day-number, #calendar .black.fc-title,
+  #day .black.fc-title, #day .black.fc-list-item-time {
     color: #000; }
-  h1 .black, h2 .black, h3 .black, p .black, a .black, .button .black,
-  input[type="submit"] .black, .link .black, input[type="text"]:-ms-input-placeholder .black, textarea .black, label.radio .black, ul .black {
+  h1 .black, h2 .black, h3 .black, h4 .black, p .black, a .black, .button .black,
+  input[type="submit"] .black, .link .black, input[type="text"]:-ms-input-placeholder .black, textarea .black, label.radio .black, ul .black, #calendar .fc-day-number .black,
+  #day .fc-day-number .black, #calendar .fc-title .black,
+  #day .fc-title .black, #day .fc-list-item-time .black {
     color: #000; }
-  h1 .black, h2 .black, h3 .black, p .black, a .black, .button .black,
-  input[type="submit"] .black, .link .black, input[type="text"]::placeholder .black, textarea .black, label.radio .black, ul .black {
+  h1 .black, h2 .black, h3 .black, h4 .black, p .black, a .black, .button .black,
+  input[type="submit"] .black, .link .black, input[type="text"]::placeholder .black, textarea .black, label.radio .black, ul .black, #calendar .fc-day-number .black,
+  #day .fc-day-number .black, #calendar .fc-title .black,
+  #day .fc-title .black, #day .fc-list-item-time .black {
     color: #000; }
-  h1.white, h2.white, h3.white, p.white, a.white, .white.button,
-  input.white[type="submit"], .white.link, input.white[type="text"]:-ms-input-placeholder, textarea.white, label.white.radio, ul.white {
+  h1.white, h2.white, h3.white, h4.white, p.white, a.white, .white.button,
+  input.white[type="submit"], .white.link, input.white[type="text"]:-ms-input-placeholder, textarea.white, label.white.radio, ul.white, #calendar .white.fc-day-number,
+  #day .white.fc-day-number, #calendar .white.fc-title,
+  #day .white.fc-title, #day .white.fc-list-item-time {
     color: #f2f2f2; }
-  h1.white, h2.white, h3.white, p.white, a.white, .white.button,
-  input.white[type="submit"], .white.link, input.white[type="text"]::placeholder, textarea.white, label.white.radio, ul.white {
+  h1.white, h2.white, h3.white, h4.white, p.white, a.white, .white.button,
+  input.white[type="submit"], .white.link, input.white[type="text"]::placeholder, textarea.white, label.white.radio, ul.white, #calendar .white.fc-day-number,
+  #day .white.fc-day-number, #calendar .white.fc-title,
+  #day .white.fc-title, #day .white.fc-list-item-time {
     color: #f2f2f2; }
-  h1 .white, h2 .white, h3 .white, p .white, a .white, .button .white,
-  input[type="submit"] .white, .link .white, input[type="text"]:-ms-input-placeholder .white, textarea .white, label.radio .white, ul .white {
+  h1 .white, h2 .white, h3 .white, h4 .white, p .white, a .white, .button .white,
+  input[type="submit"] .white, .link .white, input[type="text"]:-ms-input-placeholder .white, textarea .white, label.radio .white, ul .white, #calendar .fc-day-number .white,
+  #day .fc-day-number .white, #calendar .fc-title .white,
+  #day .fc-title .white, #day .fc-list-item-time .white {
     color: #f2f2f2; }
-  h1 .white, h2 .white, h3 .white, p .white, a .white, .button .white,
-  input[type="submit"] .white, .link .white, input[type="text"]::placeholder .white, textarea .white, label.radio .white, ul .white {
+  h1 .white, h2 .white, h3 .white, h4 .white, p .white, a .white, .button .white,
+  input[type="submit"] .white, .link .white, input[type="text"]::placeholder .white, textarea .white, label.radio .white, ul .white, #calendar .fc-day-number .white,
+  #day .fc-day-number .white, #calendar .fc-title .white,
+  #day .fc-title .white, #day .fc-list-item-time .white {
     color: #f2f2f2; }
-  h1.book, h2.book, h3.book, p.book, a.book, .book.button,
-  input.book[type="submit"], .book.link, input.book[type="text"]:-ms-input-placeholder, textarea.book, label.book.radio, ul.book {
+  h1.book, h2.book, h3.book, h4.book, p.book, a.book, .book.button,
+  input.book[type="submit"], .book.link, input.book[type="text"]:-ms-input-placeholder, textarea.book, label.book.radio, ul.book, #calendar .book.fc-day-number,
+  #day .book.fc-day-number, #calendar .book.fc-title,
+  #day .book.fc-title, #day .book.fc-list-item-time {
     font-weight: 400; }
-  h1.book, h2.book, h3.book, p.book, a.book, .book.button,
-  input.book[type="submit"], .book.link, input.book[type="text"]::placeholder, textarea.book, label.book.radio, ul.book {
+  h1.book, h2.book, h3.book, h4.book, p.book, a.book, .book.button,
+  input.book[type="submit"], .book.link, input.book[type="text"]::placeholder, textarea.book, label.book.radio, ul.book, #calendar .book.fc-day-number,
+  #day .book.fc-day-number, #calendar .book.fc-title,
+  #day .book.fc-title, #day .book.fc-list-item-time {
     font-weight: 400; }
-  h1 .book, h2 .book, h3 .book, p .book, a .book, .button .book,
-  input[type="submit"] .book, .link .book, input[type="text"]:-ms-input-placeholder .book, textarea .book, label.radio .book, ul .book {
+  h1 .book, h2 .book, h3 .book, h4 .book, p .book, a .book, .button .book,
+  input[type="submit"] .book, .link .book, input[type="text"]:-ms-input-placeholder .book, textarea .book, label.radio .book, ul .book, #calendar .fc-day-number .book,
+  #day .fc-day-number .book, #calendar .fc-title .book,
+  #day .fc-title .book, #day .fc-list-item-time .book {
     font-weight: 400; }
-  h1 .book, h2 .book, h3 .book, p .book, a .book, .button .book,
-  input[type="submit"] .book, .link .book, input[type="text"]::placeholder .book, textarea .book, label.radio .book, ul .book {
+  h1 .book, h2 .book, h3 .book, h4 .book, p .book, a .book, .button .book,
+  input[type="submit"] .book, .link .book, input[type="text"]::placeholder .book, textarea .book, label.radio .book, ul .book, #calendar .fc-day-number .book,
+  #day .fc-day-number .book, #calendar .fc-title .book,
+  #day .fc-title .book, #day .fc-list-item-time .book {
     font-weight: 400; }
-  h1.bold, h2.bold, h3.bold, p.bold, a.bold, .bold.button,
-  input.bold[type="submit"], .bold.link, input.bold[type="text"]:-ms-input-placeholder, textarea.bold, label.bold.radio, ul.bold {
+  h1.bold, h2.bold, h3.bold, h4.bold, p.bold, a.bold, .bold.button,
+  input.bold[type="submit"], .bold.link, input.bold[type="text"]:-ms-input-placeholder, textarea.bold, label.bold.radio, ul.bold, #calendar .bold.fc-day-number,
+  #day .bold.fc-day-number, #calendar .bold.fc-title,
+  #day .bold.fc-title, #day .bold.fc-list-item-time {
     font-weight: 700; }
-  h1.bold, h2.bold, h3.bold, p.bold, a.bold, .bold.button,
-  input.bold[type="submit"], .bold.link, input.bold[type="text"]::placeholder, textarea.bold, label.bold.radio, ul.bold {
+  h1.bold, h2.bold, h3.bold, h4.bold, p.bold, a.bold, .bold.button,
+  input.bold[type="submit"], .bold.link, input.bold[type="text"]::placeholder, textarea.bold, label.bold.radio, ul.bold, #calendar .bold.fc-day-number,
+  #day .bold.fc-day-number, #calendar .bold.fc-title,
+  #day .bold.fc-title, #day .bold.fc-list-item-time {
     font-weight: 700; }
-  h1.uppercase, h2.uppercase, h3.uppercase, p.uppercase, a.uppercase, .uppercase.button,
-  input.uppercase[type="submit"], .uppercase.link, input.uppercase[type="text"]:-ms-input-placeholder, textarea.uppercase, label.uppercase.radio, ul.uppercase {
+  h1.uppercase, h2.uppercase, h3.uppercase, h4.uppercase, p.uppercase, a.uppercase, .uppercase.button,
+  input.uppercase[type="submit"], .uppercase.link, input.uppercase[type="text"]:-ms-input-placeholder, textarea.uppercase, label.uppercase.radio, ul.uppercase, #calendar .uppercase.fc-day-number,
+  #day .uppercase.fc-day-number, #calendar .uppercase.fc-title,
+  #day .uppercase.fc-title, #day .uppercase.fc-list-item-time {
     text-transform: uppercase; }
-  h1.uppercase, h2.uppercase, h3.uppercase, p.uppercase, a.uppercase, .uppercase.button,
-  input.uppercase[type="submit"], .uppercase.link, input.uppercase[type="text"]::placeholder, textarea.uppercase, label.uppercase.radio, ul.uppercase {
+  h1.uppercase, h2.uppercase, h3.uppercase, h4.uppercase, p.uppercase, a.uppercase, .uppercase.button,
+  input.uppercase[type="submit"], .uppercase.link, input.uppercase[type="text"]::placeholder, textarea.uppercase, label.uppercase.radio, ul.uppercase, #calendar .uppercase.fc-day-number,
+  #day .uppercase.fc-day-number, #calendar .uppercase.fc-title,
+  #day .uppercase.fc-title, #day .uppercase.fc-list-item-time {
     text-transform: uppercase; }
 
 .bold {
@@ -175,8 +211,18 @@ h3 {
   h3.off-white {
     color: #f2f2f2; }
 
+h4 {
+  font-family: "gotham", "Helvetica", "Verdana", "Arial", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.1em;
+  letter-spacing: .136em;
+  text-transform: uppercase; }
+
 p, a, .button,
-input[type="submit"], .link, input[type="text"]:-ms-input-placeholder, textarea, label.radio, ul {
+input[type="submit"], .link, input[type="text"]:-ms-input-placeholder, textarea, label.radio, ul, #calendar .fc-day-number,
+#day .fc-day-number, #calendar .fc-title,
+#day .fc-title, #day .fc-list-item-time {
   font-family: "gotham", serif;
   font-size: .87rem;
   font-weight: 400;
@@ -184,7 +230,9 @@ input[type="submit"], .link, input[type="text"]:-ms-input-placeholder, textarea,
   letter-spacing: .137em; }
 
 p, a, .button,
-input[type="submit"], .link, input[type="text"]::placeholder, textarea, label.radio, ul {
+input[type="submit"], .link, input[type="text"]::placeholder, textarea, label.radio, ul, #calendar .fc-day-number,
+#day .fc-day-number, #calendar .fc-title,
+#day .fc-title, #day .fc-list-item-time {
   font-family: "gotham", serif;
   font-size: .87rem;
   font-weight: 400;
@@ -488,11 +536,19 @@ footer {
   display: inline-block; }
 
 .homepage-whats-included p, .homepage-whats-included a, .homepage-whats-included .button, .homepage-whats-included
-input[type="submit"], .homepage-whats-included .link, .homepage-whats-included input[type="text"]:-ms-input-placeholder, .homepage-whats-included textarea, .homepage-whats-included label.radio, .homepage-whats-included ul {
+input[type="submit"], .homepage-whats-included .link, .homepage-whats-included input[type="text"]:-ms-input-placeholder, .homepage-whats-included textarea, .homepage-whats-included label.radio, .homepage-whats-included ul, .homepage-whats-included #calendar .fc-day-number, #calendar .homepage-whats-included .fc-day-number, .homepage-whats-included
+#day .fc-day-number,
+#day .homepage-whats-included .fc-day-number, .homepage-whats-included #calendar .fc-title, #calendar .homepage-whats-included .fc-title, .homepage-whats-included
+#day .fc-title,
+#day .homepage-whats-included .fc-title, .homepage-whats-included #day .fc-list-item-time, #day .homepage-whats-included .fc-list-item-time {
   padding: 20px 0px; }
 
 .homepage-whats-included p, .homepage-whats-included a, .homepage-whats-included .button, .homepage-whats-included
-input[type="submit"], .homepage-whats-included .link, .homepage-whats-included input[type="text"]::placeholder, .homepage-whats-included textarea, .homepage-whats-included label.radio, .homepage-whats-included ul {
+input[type="submit"], .homepage-whats-included .link, .homepage-whats-included input[type="text"]::placeholder, .homepage-whats-included textarea, .homepage-whats-included label.radio, .homepage-whats-included ul, .homepage-whats-included #calendar .fc-day-number, #calendar .homepage-whats-included .fc-day-number, .homepage-whats-included
+#day .fc-day-number,
+#day .homepage-whats-included .fc-day-number, .homepage-whats-included #calendar .fc-title, #calendar .homepage-whats-included .fc-title, .homepage-whats-included
+#day .fc-title,
+#day .homepage-whats-included .fc-title, .homepage-whats-included #day .fc-list-item-time, #day .homepage-whats-included .fc-list-item-time {
   padding: 20px 0px; }
 
 @media (max-width: 640px) {
@@ -507,11 +563,19 @@ input[type="submit"], .homepage-whats-included .link, .homepage-whats-included i
   margin-bottom: 20px; }
 
 .whats-included-questions p, .whats-included-questions a, .whats-included-questions .button, .whats-included-questions
-input[type="submit"], .whats-included-questions .link, .whats-included-questions input[type="text"]:-ms-input-placeholder, .whats-included-questions textarea, .whats-included-questions label.radio, .whats-included-questions ul {
+input[type="submit"], .whats-included-questions .link, .whats-included-questions input[type="text"]:-ms-input-placeholder, .whats-included-questions textarea, .whats-included-questions label.radio, .whats-included-questions ul, .whats-included-questions #calendar .fc-day-number, #calendar .whats-included-questions .fc-day-number, .whats-included-questions
+#day .fc-day-number,
+#day .whats-included-questions .fc-day-number, .whats-included-questions #calendar .fc-title, #calendar .whats-included-questions .fc-title, .whats-included-questions
+#day .fc-title,
+#day .whats-included-questions .fc-title, .whats-included-questions #day .fc-list-item-time, #day .whats-included-questions .fc-list-item-time {
   margin-top: 20px; }
 
 .whats-included-questions p, .whats-included-questions a, .whats-included-questions .button, .whats-included-questions
-input[type="submit"], .whats-included-questions .link, .whats-included-questions input[type="text"]::placeholder, .whats-included-questions textarea, .whats-included-questions label.radio, .whats-included-questions ul {
+input[type="submit"], .whats-included-questions .link, .whats-included-questions input[type="text"]::placeholder, .whats-included-questions textarea, .whats-included-questions label.radio, .whats-included-questions ul, .whats-included-questions #calendar .fc-day-number, #calendar .whats-included-questions .fc-day-number, .whats-included-questions
+#day .fc-day-number,
+#day .whats-included-questions .fc-day-number, .whats-included-questions #calendar .fc-title, #calendar .whats-included-questions .fc-title, .whats-included-questions
+#day .fc-title,
+#day .whats-included-questions .fc-title, .whats-included-questions #day .fc-list-item-time, #day .whats-included-questions .fc-list-item-time {
   margin-top: 20px; }
 
 .banner.faq .banner-content {
@@ -538,11 +602,19 @@ input[type="submit"], .whats-included-questions .link, .whats-included-questions
   max-height: 10000px; }
 
 .topics .category p, .topics .category a, .topics .category .button, .topics .category
-input[type="submit"], .topics .category .link, .topics .category input[type="text"]:-ms-input-placeholder, .topics .category textarea, .topics .category label.radio, .topics .category ul {
+input[type="submit"], .topics .category .link, .topics .category input[type="text"]:-ms-input-placeholder, .topics .category textarea, .topics .category label.radio, .topics .category ul, .topics .category #calendar .fc-day-number, #calendar .topics .category .fc-day-number, .topics .category
+#day .fc-day-number,
+#day .topics .category .fc-day-number, .topics .category #calendar .fc-title, #calendar .topics .category .fc-title, .topics .category
+#day .fc-title,
+#day .topics .category .fc-title, .topics .category #day .fc-list-item-time, #day .topics .category .fc-list-item-time {
   margin-bottom: 0px; }
 
 .topics .category p, .topics .category a, .topics .category .button, .topics .category
-input[type="submit"], .topics .category .link, .topics .category input[type="text"]::placeholder, .topics .category textarea, .topics .category label.radio, .topics .category ul {
+input[type="submit"], .topics .category .link, .topics .category input[type="text"]::placeholder, .topics .category textarea, .topics .category label.radio, .topics .category ul, .topics .category #calendar .fc-day-number, #calendar .topics .category .fc-day-number, .topics .category
+#day .fc-day-number,
+#day .topics .category .fc-day-number, .topics .category #calendar .fc-title, #calendar .topics .category .fc-title, .topics .category
+#day .fc-title,
+#day .topics .category .fc-title, .topics .category #day .fc-list-item-time, #day .topics .category .fc-list-item-time {
   margin-bottom: 0px; }
 
 .contact {
@@ -576,21 +648,39 @@ input[type="submit"], .topics .category .link, .topics .category input[type="tex
     .booking-nav h3.is-active {
       opacity: 1; }
 
+.booking-choices .icon {
+  margin-bottom: 30px; }
+
+.booking-choices .grid-y {
+  height: 100%; }
+
+.booking-choices .inputs h4 {
+  margin-top: 30px; }
+
+.booking-choices .inputs input {
+  margin-top: 10px;
+  border: 1px solid #aaa; }
+  .booking-choices .inputs input:hover {
+    border: 1px solid #000; }
+  .booking-choices .inputs input:focus {
+    border: 1px solid #000; }
+
 .booking-choices .item {
   padding: 30px;
   max-width: 300px;
   border: 1px solid #e5e5e5;
+  cursor: pointer;
   transition: all .3s ease-out; }
-  .booking-choices .item p.bold, .booking-choices .item a.bold, .booking-choices .item .bold.button, .booking-choices .item
-  input.bold[type="submit"], .booking-choices .item .bold.link, .booking-choices .item input.bold[type="text"]:-ms-input-placeholder, .booking-choices .item textarea.bold, .booking-choices .item label.bold.radio, .booking-choices .item ul.bold {
-    margin-bottom: 0px; }
-  .booking-choices .item p.bold, .booking-choices .item a.bold, .booking-choices .item .bold.button, .booking-choices .item
-  input.bold[type="submit"], .booking-choices .item .bold.link, .booking-choices .item input.bold[type="text"]::placeholder, .booking-choices .item textarea.bold, .booking-choices .item label.bold.radio, .booking-choices .item ul.bold {
+  .booking-choices .item h3.bold {
     margin-bottom: 0px; }
   .booking-choices .item h3 {
     margin-bottom: 20px; }
   .booking-choices .item:hover {
     border: 1px solid #666; }
+  .booking-choices .item .icon.white {
+    display: none; }
+  .booking-choices .item .icon.black {
+    display: inline-block; }
   .booking-choices .item.is-active {
     padding: 20px;
     background: #464447;
@@ -600,36 +690,142 @@ input[type="submit"], .topics .category .link, .topics .category input[type="tex
     .booking-choices .item.is-active h3 {
       color: #ecece4; }
     .booking-choices .item.is-active p, .booking-choices .item.is-active a, .booking-choices .item.is-active .button, .booking-choices .item.is-active
-    input[type="submit"], .booking-choices .item.is-active .link, .booking-choices .item.is-active input[type="text"]:-ms-input-placeholder, .booking-choices .item.is-active textarea, .booking-choices .item.is-active label.radio, .booking-choices .item.is-active ul {
+    input[type="submit"], .booking-choices .item.is-active .link, .booking-choices .item.is-active input[type="text"]:-ms-input-placeholder, .booking-choices .item.is-active textarea, .booking-choices .item.is-active label.radio, .booking-choices .item.is-active ul, .booking-choices .item.is-active #calendar .fc-day-number, #calendar .booking-choices .item.is-active .fc-day-number, .booking-choices .item.is-active
+    #day .fc-day-number,
+    #day .booking-choices .item.is-active .fc-day-number, .booking-choices .item.is-active #calendar .fc-title, #calendar .booking-choices .item.is-active .fc-title, .booking-choices .item.is-active
+    #day .fc-title,
+    #day .booking-choices .item.is-active .fc-title, .booking-choices .item.is-active #day .fc-list-item-time, #day .booking-choices .item.is-active .fc-list-item-time {
       color: #ecece4; }
     .booking-choices .item.is-active p, .booking-choices .item.is-active a, .booking-choices .item.is-active .button, .booking-choices .item.is-active
-    input[type="submit"], .booking-choices .item.is-active .link, .booking-choices .item.is-active input[type="text"]::placeholder, .booking-choices .item.is-active textarea, .booking-choices .item.is-active label.radio, .booking-choices .item.is-active ul {
+    input[type="submit"], .booking-choices .item.is-active .link, .booking-choices .item.is-active input[type="text"]::placeholder, .booking-choices .item.is-active textarea, .booking-choices .item.is-active label.radio, .booking-choices .item.is-active ul, .booking-choices .item.is-active #calendar .fc-day-number, #calendar .booking-choices .item.is-active .fc-day-number, .booking-choices .item.is-active
+    #day .fc-day-number,
+    #day .booking-choices .item.is-active .fc-day-number, .booking-choices .item.is-active #calendar .fc-title, #calendar .booking-choices .item.is-active .fc-title, .booking-choices .item.is-active
+    #day .fc-title,
+    #day .booking-choices .item.is-active .fc-title, .booking-choices .item.is-active #day .fc-list-item-time, #day .booking-choices .item.is-active .fc-list-item-time {
       color: #ecece4; }
-    .booking-choices .item.is-active p.bold, .booking-choices .item.is-active a.bold, .booking-choices .item.is-active .bold.button, .booking-choices .item.is-active
-    input.bold[type="submit"], .booking-choices .item.is-active .bold.link, .booking-choices .item.is-active input.bold[type="text"]:-ms-input-placeholder, .booking-choices .item.is-active textarea.bold, .booking-choices .item.is-active label.bold.radio, .booking-choices .item.is-active ul.bold {
+    .booking-choices .item.is-active h3.bold {
       margin-bottom: 30px; }
-    .booking-choices .item.is-active p.bold, .booking-choices .item.is-active a.bold, .booking-choices .item.is-active .bold.button, .booking-choices .item.is-active
-    input.bold[type="submit"], .booking-choices .item.is-active .bold.link, .booking-choices .item.is-active input.bold[type="text"]::placeholder, .booking-choices .item.is-active textarea.bold, .booking-choices .item.is-active label.bold.radio, .booking-choices .item.is-active ul.bold {
-      margin-bottom: 30px; }
+    .booking-choices .item.is-active .icon.white {
+      display: inline-block; }
+    .booking-choices .item.is-active .icon.black {
+      display: none; }
 
 .booking-choices.add-ons .item.is-active {
   margin-top: 0px;
   padding: 30px;
   box-shadow: none; }
 
+#calendar h2,
+#day h2 {
+  font-size: 1.2rem;
+  font-weight: 400; }
+
+#calendar th,
+#calendar td,
+#calendar thead,
+#calendar tbody,
+#calendar .fc-divider,
+#calendar .fc-row,
+#calendar .fc-content,
+#calendar .fc-popover,
+#calendar .fc-list-view,
+#calendar .fc-list-heading td,
+#day th,
+#day td,
+#day thead,
+#day tbody,
+#day .fc-divider,
+#day .fc-row,
+#day .fc-content,
+#day .fc-popover,
+#day .fc-list-view,
+#day .fc-list-heading td {
+  border-color: #000; }
+
+#calendar .fc-event-container,
+#day .fc-event-container {
+  background: #b59b8f; }
+
+#calendar .fc-event,
+#day .fc-event {
+  background: #b59b8f;
+  border: none; }
+
+#calendar .fc-button,
+#day .fc-button {
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  border: none;
+  height: auto; }
+
+#calendar .fc-bgevent,
+#day .fc-bgevent {
+  opacity: 1;
+  background: #ecece4; }
+
+#calendar .fc-content-skeleton thead,
+#day .fc-content-skeleton thead {
+  height: 0px; }
+
+#calendar .fc-title,
+#day .fc-title {
+  display: none;
+  text-transform: none;
+  color: #fff; }
+
+#calendar .fc-today,
+#day .fc-today {
+  background: #fff; }
+
 .booking-submission {
   margin-top: 80px; }
   .booking-submission p.light-grey, .booking-submission a.light-grey, .booking-submission .light-grey.button, .booking-submission
-  input.light-grey[type="submit"], .booking-submission .light-grey.link, .booking-submission input.light-grey[type="text"]:-ms-input-placeholder, .booking-submission textarea.light-grey, .booking-submission label.light-grey.radio, .booking-submission ul.light-grey {
+  input.light-grey[type="submit"], .booking-submission .light-grey.link, .booking-submission input.light-grey[type="text"]:-ms-input-placeholder, .booking-submission textarea.light-grey, .booking-submission label.light-grey.radio, .booking-submission ul.light-grey, .booking-submission #calendar .light-grey.fc-day-number, #calendar .booking-submission .light-grey.fc-day-number, .booking-submission
+  #day .light-grey.fc-day-number,
+  #day .booking-submission .light-grey.fc-day-number, .booking-submission #calendar .light-grey.fc-title, #calendar .booking-submission .light-grey.fc-title, .booking-submission
+  #day .light-grey.fc-title,
+  #day .booking-submission .light-grey.fc-title, .booking-submission #day .light-grey.fc-list-item-time, #day .booking-submission .light-grey.fc-list-item-time {
     margin-top: 20px;
     color: #999; }
   .booking-submission p.light-grey, .booking-submission a.light-grey, .booking-submission .light-grey.button, .booking-submission
-  input.light-grey[type="submit"], .booking-submission .light-grey.link, .booking-submission input.light-grey[type="text"]::placeholder, .booking-submission textarea.light-grey, .booking-submission label.light-grey.radio, .booking-submission ul.light-grey {
+  input.light-grey[type="submit"], .booking-submission .light-grey.link, .booking-submission input.light-grey[type="text"]::placeholder, .booking-submission textarea.light-grey, .booking-submission label.light-grey.radio, .booking-submission ul.light-grey, .booking-submission #calendar .light-grey.fc-day-number, #calendar .booking-submission .light-grey.fc-day-number, .booking-submission
+  #day .light-grey.fc-day-number,
+  #day .booking-submission .light-grey.fc-day-number, .booking-submission #calendar .light-grey.fc-title, #calendar .booking-submission .light-grey.fc-title, .booking-submission
+  #day .light-grey.fc-title,
+  #day .booking-submission .light-grey.fc-title, .booking-submission #day .light-grey.fc-list-item-time, #day .booking-submission .light-grey.fc-list-item-time {
     margin-top: 20px;
     color: #999; }
   .booking-submission .button.light-grey {
     background: #f2f2f2;
     color: #464447;
     font-weight: 700; }
+
+#day th,
+#day td,
+#day thead,
+#day tbody,
+#day .fc-divider,
+#day .fc-row,
+#day .fc-content,
+#day .fc-popover,
+#day .fc-list-view,
+#day .fc-list-heading td {
+  border-color: #B3B3B3; }
+
+#day .fc-list-item-time {
+  text-align: center;
+  background: #b59b8f;
+  color: #fff;
+  font-weight: 700; }
+
+#day .fc-list-item-title {
+  display: none; }
+
+#day .fc-list-heading {
+  display: none; }
+
+#day .fc-list-item-marker {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

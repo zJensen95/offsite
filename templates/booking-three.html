@@ -46,23 +46,47 @@
 	
 	<div class="grid-container">
 		<div class="booking-choices add-ons">
-			<div class="grid-x grid-margin-x align-center align-top text-center">
+			<div class="grid-x grid-margin-x align-center align-stretcn text-center">
 				
-				<div class="small-12 medium-6 large-3 is-active item cell">
-					<h3 class="book">Catering</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<div class="small-12 medium-6 large-3 is-active item cell" onclick="bookingChoose(this)">
+					<div class="grid-y align-right">
+						<div class="shrink cell">
+							<img class="icon black" src="assets/icons/catering_black.png" />
+							<img class="icon white" src="assets/icons/catering_white.png" />
+							<h3 class="book">Catering</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
 				</div>
-				<div class="small-12 medium-6 large-3 item cell">
+				<div class="small-12 medium-6 large-3 item cell" onclick="bookingChoose(this)">
+					<div class="grid-y align-right">
+						<div class="shrink cell">
+						<img class="icon black" src="assets/icons/podium_black.png" />
+					<img class="icon white" src="assets/icons/podium_white.png" />
 					<h3 class="book">Facilitator</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
 				</div>
-				<div class="small-12 medium-6 large-3 item cell">
+				<div class="small-12 medium-6 large-3 item cell" onclick="bookingChoose(this)">
+					<div class="grid-y align-right">
+						<div class="shrink cell">
+					<img class="icon white" src="assets/icons/chairs_white.png" />
+					<img class="icon black" src="assets/icons/chairs_black.png" />
 					<h3 class="book">Setup</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
 				</div>
-				<div class="small-12 medium-6 large-3 item cell">
+				<div class="small-12 medium-6 large-3 item cell" onclick="bookingChoose(this)">
+					<div class="grid-y align-right">
+						<div class="shrink cell">
+					<img class="icon white" src="assets/icons/technical_white.png" />
+					<img class="icon black" src="assets/icons/technical_black.png" />
 					<h3 class="book">Technical</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
 				</div>
 				
 			</div>
@@ -75,8 +99,8 @@
 				
 				<div class="shrink cell text-center">
 					<p class="uppercase">Next</p>
-					<a href="{{ siteUrl }}booking-two" class="button light-grey">Reserve Date & Time</a>
-					<p class="light-grey text-left">Proceed to Checkout</p>
+					<a href="{{ siteUrl }}booking-two" class="button light-grey">Proceed to Checkout</a>
+					<p class="light-grey text-left">Rules for Booking</p>
 				</div>
 				
 			</div>
